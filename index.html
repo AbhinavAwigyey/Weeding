@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Rohit & Juni — Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Great+Vibes&family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+  <!-- ================= FALLING PETALS (site-wide) ================= -->
+  <div id="petal-layer" aria-hidden="true"></div>
+
+  <!-- ================= ENVELOPE INTRO ================= -->
+  <div id="envelope-screen">
+    <div class="envelope-wrap" id="envelopeWrap">
+      <div class="env-pattern">
+        <svg class="vine" viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 10 C 60 60, 10 100, 50 150 S 90 220, 60 250" stroke="#f3d9a8" stroke-width="1.2" fill="none"/>
+          <path d="M180 10 C 140 60, 190 100, 150 150 S 110 220, 140 250" stroke="#f3d9a8" stroke-width="1.2" fill="none"/>
+        </svg>
+        <div class="env-flap"></div>
+        <div class="env-seal" id="sealBtn">Tap<br>to<br>open</div>
+        <div class="env-flash"></div>
+        <div class="env-invited">YOU ARE INVITED</div>
+      </div>
+      <div class="tap-hint">TAP THE SEAL</div>
+    </div>
+  </div>
+
+  <!-- ================= HERO / NAMES ================= -->
+  <section id="hero">
+    <div class="hero-arch-glow"></div>
+    <svg class="corner-vine tl" viewBox="0 0 100 100"><path d="M5 5 Q40 5 40 40 Q40 70 70 70" stroke="currentColor" stroke-width="1" fill="none"/></svg>
+    <svg class="corner-vine br" viewBox="0 0 100 100"><path d="M5 5 Q40 5 40 40 Q40 70 70 70" stroke="currentColor" stroke-width="1" fill="none"/></svg>
+
+    <div class="hero-arch"></div>   
+    <div class="ganesha-container">
+      <img src="ganesha.png" alt="Lord Ganesha" class="ganesha-img">
+    </div>
+
+    <div class="hero-heart">♥️</div>
+    <p class="hero-eyebrow">We are honored to welcome you to<br>the wedding celebration of</p>
+
+    <h1 class="hero-name bride">Juni</h1>
+    <p class="hero-sub g">D/O: Mr. Lakshman &
+                                             Mrs. Annu Sharma
+    </p>
+
+    <div class="hero-amp">&amp;</div>
+
+    <h1 class="hero-name groom">Rohit</h1>
+    <p class="hero-sub b"> S/O: Late Jagarnath & Mrs. Indu Devi </p>
+
+    <div class="scroll-cue">SCROLL<span class="chev">⌄</span></div>
+  </section>
+
+  <!-- ================= SCRATCH TO REVEAL ================= -->
+  <section id="scratch-section">
+    <div class="reveal">
+      <p class="eyebrow-script">blessed occasion ♥️</p>
+      <div class="divider"><span class="heart">♥️</span></div>
+      <h2>Scratch to Reveal</h2>
+      <div class="scratch-box">
+        <div class="scratch-reveal">
+          <div class="date">December 02, 2026</div>
+          <div class="day"> Wednesday · 07:00 PM</div>
+        </div>
+        <canvas class="scratch-canvas" id="scratchCanvas" width="230" height="230"></canvas>
+      </div>
+      <p class="scratch-hint" id="scratchHint">swipe your finger over the Circle ✦</p>
+    </div>
+  </section>
+
+  <!-- ================= COUNTDOWN ================= -->
+  <section id="countdown-section">
+  
+      <h2>Counting Down to Forever</h2>
+      <div class="divider"><span class="heart">♥️</span></div>
+      <div class="timer-grid">
+        <div class="timer-cell"><b id="cdDays">00</b><span>Days</span></div>
+        <div class="timer-cell"><b id="cdHours">00</b><span>Hours</span></div>
+        <div class="timer-cell"><b id="cdMins">00</b><span>Minutes</span></div>
+        <div class="timer-cell"><b id="cdSecs">00</b><span>Seconds</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VENUE ================= -->
+  <section id="venue-section">
+    <div class="reveal">
+        <h2>Wedding Venue</h2>
+      <div class="divider"><span class="heart">♥️</span></div>
+      <p class="name">Kaveri Harsh Garden</p>
+      <p class="addr">  Ward No:- 2, Singhaul,Begusarai</p>
+      <svg class="venue-illustration" viewBox="0 0 260 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#c9a08f" stroke-width="1.2">
+          <rect x="30" y="60" width="200" height="45" />
+          <path d="M30 60 L130 15 L230 60" />
+          <circle cx="130" cy="15" r="6" />
+          <line x1="70" y1="60" x2="70" y2="105"/>
+          <line x1="190" y1="60" x2="190" y2="105"/>
+          <line x1="130" y1="60" x2="130" y2="105"/>
+        </g>
+      </svg>
+      
+      <a class="btn-maps"
+   href="https://maps.app.goo.gl/fRVJFBhY3vKhBXBG8"
+   target="_blank"
+   rel="noopener">
+  View on Google Maps
+</a>
+      
+
+    
+    </div>
+  </section>
+
+ 
+  </section>
+
+  <!-- ================= ACCOMMODATION + GIFTS ================= -->
+  <section id="extra-section">
+    <div class="reveal extra-block">
+      
+      <div class="icon-badge">🎁</div>
+      <h3>Gifts</h3>
+      <p>Your love, blessings, and presence are the greatest gifts we could ask for.</p>
+    </div>
+  </section>
+
+
+
+  <!-- ================= CLOSING ================= -->
+  <section id="closing-section">
+    <p class="msg">We can't wait to<br>celebrate with you!</p>
+    <p class="names">Juni &amp; Rohit</p>
+
+   
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+<footer>
+    <p class="credit">© 2026 Abhinav Awigyey. All rights reserved. </p>
+    <p class="credit">Designed & Developed by Abhinav Awigyey</p>
+</footer>
+ </body>  
+</html>
